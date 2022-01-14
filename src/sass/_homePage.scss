@@ -1,0 +1,267 @@
+.home.page-wrap {
+  position: relative;
+  p {
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    opacity: 0;
+  }
+  div {
+    position: absolute;
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+    line-height: 100px;
+    text-align: center;
+    opacity: 0;
+  }
+  div.animation-center {
+    opacity: 1;
+    @include absolute-centered;
+    img {
+      @include absolute-centered;
+      width: 400px;
+      height: 400px;
+      border-radius: 15px;
+    }
+  }
+  .word-animate-responsive {
+    top: 50px;
+    left: 70px;
+    animation: animate-responsive 5s ease-in 0.5s 1 forwards;
+  }
+  .word-animate-clear {
+    top: 200px;
+    left: 40px;
+    animation: animate-clear 5s ease-in 1s 1 forwards;
+  }
+  .word-animate-easy {
+    top: 400px;
+    left: 30px;
+    animation: animate-easy 5s ease-in 1.5s 1 forwards;
+  }
+  .word-animate-functional {
+    top: 550px;
+    left: 70px;
+    animation: animate-functional 5s ease-in 2s 1 forwards;
+  }
+  .word-animate-slogan {
+    opacity: 1;
+    font-size: 40px;
+    text-transform: none;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    color: #333;
+  }
+  .react-logo {
+    background-color: #61dafb;
+    top: 300px;
+    left: 900px;
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 15px;
+    }
+    animation: animate-react 5s ease-in 3.5s 1 forwards;
+  }
+  .js-logo {
+    background-color: #f0db4f;
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    width: 90px;
+    top: 450px;
+    left: 750px;
+    animation: animate-js 5s ease-in 4s 1 forwards;
+  }
+  .html-logo {
+    background-color: #e34c26;
+    color: white;
+    width: 120px;
+    height: 90px;
+    line-height: 90px;
+    top: 120px;
+    left: 850px;
+    animation: animate-html 5s ease-in 3s 1 forwards;
+  }
+  .css-logo {
+    background-color: #264de4;
+    color: white;
+    height: 90px;
+    line-height: 90px;
+    top: 50px;
+    left: 700px;
+    animation: animate-css 5s ease-in 2.5s 1 forwards;
+  }
+}
+
+@keyframes animate-responsive {
+  0% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  20% {
+    top: 50px;
+    left: 70px;
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    top: 50px;
+    left: 70px;
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes animate-clear {
+  0% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  20% {
+    top: 200px;
+    left: 40px;
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    top: 200px;
+    left: 40px;
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes animate-easy {
+  0% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  20% {
+    top: 400px;
+    left: 30px;
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    top: 400px;
+    left: 30px;
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes animate-functional {
+  0% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  20% {
+    top: 550px;
+    left: 70px;
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    top: 550px;
+    left: 70px;
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes animate-react {
+  0% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  20% {
+    top: 300px;
+    left: 900px;
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    top: 300px;
+    left: 900px;
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes animate-css {
+  0% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  20% {
+    top: 50px;
+    left: 700px;
+
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    top: 50px;
+    left: 700px;
+
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes animate-js {
+  0% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  20% {
+    top: 450px;
+    left: 750px;
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    top: 450px;
+    left: 750px;
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes animate-html {
+  0% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  20% {
+    top: 120px;
+    left: 850px;
+
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    top: 120px;
+    left: 850px;
+
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}

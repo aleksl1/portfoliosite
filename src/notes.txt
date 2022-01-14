@@ -1,0 +1,9 @@
+css - scss, frameworks
+html - SEO, BEM
+react - redux, router, SPA,
+js - es6 ,
+
+rest api
+backend - node, modgodb , express. next
+
+GIT

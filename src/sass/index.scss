@@ -1,0 +1,29 @@
+@import "variables";
+@import "global";
+@import "mixins";
+@import "logo";
+@import "navigation";
+@import "homePage";
+@import "projectsPage";
+@import "aboutMePage";
+@import "contactPage";
+@import "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #333;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+.wrapper {
+  max-width: 1024px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}

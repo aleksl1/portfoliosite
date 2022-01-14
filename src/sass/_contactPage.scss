@@ -1,0 +1,22 @@
+.contact {
+  // background-color: $colordarkgreen;
+  position: relative;
+  min-height: 270px;
+  .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include absolute-centered;
+    span {
+      display: block;
+      flex-grow: 1;
+      flex-basis: 100%;
+      padding: 15px;
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}

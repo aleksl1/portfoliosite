@@ -1,0 +1,63 @@
+$animationColor1: #f67265;
+$animationColor2: #d45770;
+$animationColor3: #eb6cc5;
+$animationColor4: #c657d4;
+$animationColor5: #bf65f6;
+
+.logo {
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+}
+.logo-animation span {
+  animation-name: animatedLogo;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+.logo-animation span:nth-child(1) {
+  color: $animationColor1;
+  animation-delay: 0s;
+}
+.logo-animation span:nth-child(2) {
+  color: $animationColor2;
+  animation-delay: 1s;
+}
+.logo-animation span:nth-child(3) {
+  color: $animationColor3;
+  animation-delay: 2s;
+}
+.logo-animation span:nth-child(4) {
+  color: $animationColor4;
+  animation-delay: 3s;
+}
+.logo-animation span:nth-child(5) {
+  color: $animationColor5;
+  animation-delay: 4s;
+}
+.logo-animation span:nth-child(6) {
+  color: $animationColor1;
+  animation-delay: 5s;
+}
+@keyframes animatedLogo {
+  0% {
+    color: $animationColor1;
+  }
+  20% {
+    color: $animationColor2;
+  }
+  40% {
+    color: $animationColor3;
+  }
+  60% {
+    color: $animationColor4;
+  }
+  80% {
+    color: $animationColor5;
+  }
+  100% {
+    color: $animationColor1;
+  }
+}
