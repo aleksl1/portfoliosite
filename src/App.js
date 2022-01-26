@@ -9,10 +9,18 @@ import ErrorPage from "./pages/ErrorPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import AboutMePage from "./pages/AboutMePage";
 import ContactPage from "./pages/ContactPage";
+import LangContext from "./store/lang-context";
 
 function App() {
+  const [isInEnglish, setIsInEnglish] = useState(true);
+  const changeLangHandler = () => {
+    setIsInEnglish((prevState) => !prevState);
+  };
+
   return (
-    <>
+    <LangContext.Provider
+      value={{ inEnglish: isInEnglish, changeLang: changeLangHandler }}
+    >
       <div className="wrapper">
         <Navigation />
         <Routes>
@@ -24,7 +32,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
-    </>
+    </LangContext.Provider>
   );
 }
 

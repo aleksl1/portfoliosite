@@ -1,10 +1,39 @@
 import reactLogo from "../assets/react-logo-icon.png";
 import centerImage from "../assets/center.png";
+import developerImage from "../assets/developer.png";
+import SelectLang from "../components/SelectLang";
+import { useContext } from "react";
+import LangContext from "../store/lang-context";
 
 const HomePage = () => {
+  const contextLang = useContext(LangContext);
   return (
     <>
-      <div className="home page-wrap desktop">
+      <SelectLang />
+      <div className="home page-wrap">
+        <div className="page-container">
+          <div className="home-introduction">
+            {contextLang.inEnglish && (
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
+                porro maiores praesentium sint cum nobis ratione, asperiores
+                quidem quibusdam dicta repudiandae in tenetur voluptas fuga
+                blanditiis, velit sequi, hic ipsum!
+              </p>
+            )}
+            {!contextLang.inEnglish && (
+              <p>
+                PO POLSKU PO POLSKU PO POLSKU PO POLSKU PO POLSKU PO POLSKU PO
+                POLSKU PO POLSKU{" "}
+              </p>
+            )}
+          </div>
+          <div className="img-container">
+            <img src={developerImage} alt="web developer" />
+          </div>
+        </div>
+      </div>
+      {/* <div className="home page-wrap desktop">
         <p className="word-animate-clear">Clear</p>
         <p className="word-animate-easy">Easy to Use</p>
         <p className="word-animate-functional">Functional</p>
@@ -19,7 +48,7 @@ const HomePage = () => {
         <div className="js-logo">Js</div>
         <div className="css-logo">Css</div>
         <div className="html-logo">Html</div>
-      </div>
+      </div> */}
     </>
   );
 };

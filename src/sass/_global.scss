@@ -18,3 +18,14 @@
     color: black;
   }
 }
+
+.select-lang {
+  margin: 15px;
+  color: rgb(255, 255, 255);
+  border: solid 1px $color3;
+  width: 50px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 5px;
+}
