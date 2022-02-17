@@ -1,14 +1,8 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import {
-  FaBars,
-  FaChevronUp,
-  FaHome,
-  FaCogs,
-  FaInfoCircle,
-  FaMailBulk,
-} from "react-icons/fa";
+import { FaHome, FaCogs, FaInfoCircle, FaMailBulk } from "react-icons/fa";
 import Logo from "./Logo";
+import SelectLang from "./SelectLang";
 
 const Navigation = () => {
   const [showNav, setShowNav] = useState(true);
@@ -26,37 +20,62 @@ const Navigation = () => {
         <div className="logo-wrap">
           <Logo name="webdev" />
         </div>
+
+        <div className="mobile-menu-actions">
+          <div
+            onClick={navToggleHandler}
+            className={`mobile-menu-open ${hideNavClass}`}
+          >
+            <span>|||</span>
+          </div>
+          <div
+            className={`mobile-menu-close ${showNavClass}`}
+            onClick={navToggleHandler}
+          >
+            X
+          </div>
+          <div className={`mobile-menu-lang ${showNavClass}`}>
+            <SelectLang />
+          </div>
+        </div>
+
         <ul className={`nav-list ${showNavClass}`}>
           <li>
-            <NavLink className={activeClass} to="/">
-              Home <FaHome className="icon-centered" />
+            <NavLink onClick={navToggleHandler} className={activeClass} to="/">
+              <FaHome className="icon-centered" /> Home
             </NavLink>
           </li>
           <li>
-            <NavLink className={activeClass} to="projects">
-              Projects <FaCogs className="icon-centered" />
+            <NavLink
+              onClick={navToggleHandler}
+              className={activeClass}
+              to="projects"
+            >
+              <FaCogs className="icon-centered" /> Projects
             </NavLink>
           </li>
           <li>
-            <NavLink className={activeClass} to="about">
-              About Me <FaInfoCircle className="icon-centered" />
+            <NavLink
+              onClick={navToggleHandler}
+              className={activeClass}
+              to="about"
+            >
+              <FaInfoCircle className="icon-centered" /> About Me
             </NavLink>
           </li>
 
           <li>
-            <NavLink className={activeClass} to="contact">
-              Contact <FaMailBulk className="icon-centered" />
+            <NavLink
+              onClick={navToggleHandler}
+              className={activeClass}
+              to="contact"
+            >
+              <FaMailBulk className="icon-centered" /> Contact
             </NavLink>
           </li>
         </ul>
-        <div className={`bars-container ${hideNavClass}`}>
-          <FaBars className="bars-menu" onClick={navToggleHandler} />
-        </div>
-        <div
-          className={`nav-toggle ${showNavClass}`}
-          onClick={navToggleHandler}
-        >
-          <FaChevronUp className="chevron-up" />
+        <div className="lang-container">
+          <SelectLang />
         </div>
       </div>
     </nav>

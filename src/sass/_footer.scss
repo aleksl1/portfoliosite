@@ -8,15 +8,16 @@ footer {
     align-items: center;
     justify-content: center;
     &-social {
-      padding: 25px;
+      padding: 2rem;
       @media (max-width: 640px) {
-        padding: 15px;
+        padding: 1rem;
       }
       a {
         color: white;
-        font-size: 50px;
+        font-size: 3rem;
+        padding: 0.5rem;
         @media (max-width: 640px) {
-          font-size: 35px;
+          font-size: 2rem;
         }
         &:hover {
           color: $color3;
