@@ -1,14 +1,7 @@
 .select-lang {
-  position: fixed;
-  top: -1%;
-  left: -10px;
-  margin: 15px;
-  z-index: 99999;
-
-  @media (max-width: 640px) {
-    display: none;
-  }
+  position: relative;
   img {
+    @include absolute-centered;
     width: 30px;
     height: 30px;
   }

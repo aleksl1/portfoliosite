@@ -10,7 +10,17 @@ $animationColor5: #bf65f6;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 2rem;
+}
+@media (max-width: 880px) {
+  .logo {
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
 }
 .logo-animation span {
   animation-name: animatedLogo;

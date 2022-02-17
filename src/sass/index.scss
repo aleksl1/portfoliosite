@@ -10,6 +10,7 @@
 @import "contactPage";
 @import "footer";
 @import "selectLang";
+@import "projectCard";
 
 * {
   margin: 0;
@@ -17,19 +18,13 @@
   box-sizing: border-box;
 }
 body {
-  // background-color: #333333e5;
-  background-image: url("../assets/bg2.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
+  background: url("../assets/bg2.png") no-repeat center center fixed;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
 }
 .background-effects {
   position: absolute;
   width: 100%;
-  min-height: 100vh;
   background-color: rgba(34, 34, 34, 0.904);
 }
 .wrapper {

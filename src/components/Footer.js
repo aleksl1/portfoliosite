@@ -21,19 +21,10 @@ const Footer = () => {
               <FaMobileAlt />
             </a>
           </span>
-          <span className="footer-info-social">
-            <a href="https://www.facebook.com/profile.php?id=100002375926921">
-              <FaFacebook />
-            </a>
-          </span>
+
           <span className="footer-info-social">
             <a href="https://github.com/aleksl1">
               <FaGithub />
-            </a>
-          </span>
-          <span className="footer-info-social">
-            <a href="https://www.linkedin.com/in/aleksander-s%C5%82awek-a1383622a/">
-              <FaLinkedin />
             </a>
           </span>
         </div>

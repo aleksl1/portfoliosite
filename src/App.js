@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import Navigation from "./components/Navigation";
@@ -10,7 +10,7 @@ import ProjectsPage from "./pages/ProjectsPage";
 import AboutMePage from "./pages/AboutMePage";
 import ContactPage from "./pages/ContactPage";
 import LangContext from "./store/lang-context";
-import SelectLang from "./components/SelectLang";
+
 function App() {
   const [isInEnglish, setIsInEnglish] = useState(true);
   const changeLangHandler = () => {
@@ -23,7 +23,6 @@ function App() {
     >
       <div className="background-effects">
         <div className="wrapper">
-          <SelectLang />
           <Navigation />
           <Routes>
             <Route path="/" element={<HomePage />} />
