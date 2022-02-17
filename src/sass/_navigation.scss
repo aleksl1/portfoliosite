@@ -2,8 +2,8 @@ nav {
   width: 100%;
   border-bottom: solid 1px $colororange;
   @media (max-width: 640px) {
-    background-color: $colororange;
-    border-bottom: solid 1px black;
+    background-color: transparent;
+    border-bottom: solid 2px black;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
@@ -50,7 +50,8 @@ nav {
           }
           @media (max-width: 640px) {
             &:hover {
-              color: $bgcolor;
+              // color: $bgcolor;
+              color: $color3;
             }
           }
         }
@@ -61,7 +62,8 @@ nav {
           a {
             font-size: 0.9rem;
             &.active {
-              color: $bgcolor;
+              // color: $bgcolor;
+              color: $color3;
             }
           }
         }
@@ -77,24 +79,39 @@ nav {
   width: 10px;
   height: 10px;
   background-color: transparent;
+
   .hide {
     @media (max-width: 640px) {
       display: none;
     }
   }
   .chevron-up {
-    background-color: $colororange;
-    border-radius: 50%;
+    border-radius: 100%;
     width: 50px;
     color: white;
     font-size: 30px;
-    border-bottom: solid 1px black;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    z-index: 9999;
+    background-color: rgb(34, 34, 34);
+    border: solid 2px black;
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     display: none;
     position: fixed;
     left: 0;
-    top: -5px;
+    top: -18px;
+    &:hover {
+      color: $color3;
+    }
+    @media (min-width: 420px) and (max-width: 640px) {
+      font-size: 30px;
+      top: 10px;
+      border: solid 2px black;
+      border-top: none;
+      border-radius: 0;
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+    }
     @media (max-width: 640px) {
       display: block;
     }

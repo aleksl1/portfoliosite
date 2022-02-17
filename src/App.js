@@ -10,7 +10,7 @@ import ProjectsPage from "./pages/ProjectsPage";
 import AboutMePage from "./pages/AboutMePage";
 import ContactPage from "./pages/ContactPage";
 import LangContext from "./store/lang-context";
-
+import SelectLang from "./components/SelectLang";
 function App() {
   const [isInEnglish, setIsInEnglish] = useState(true);
   const changeLangHandler = () => {
@@ -21,16 +21,19 @@ function App() {
     <LangContext.Provider
       value={{ inEnglish: isInEnglish, changeLang: changeLangHandler }}
     >
-      <div className="wrapper">
-        <Navigation />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="projects" element={<ProjectsPage />} />
-          <Route path="about" element={<AboutMePage />} />
-          <Route path="contact" element={<ContactPage />} />
-          <Route path="*" element={<ErrorPage />} />
-        </Routes>
-        <Footer />
+      <div className="background-effects">
+        <div className="wrapper">
+          <SelectLang />
+          <Navigation />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="projects" element={<ProjectsPage />} />
+            <Route path="about" element={<AboutMePage />} />
+            <Route path="contact" element={<ContactPage />} />
+            <Route path="*" element={<ErrorPage />} />
+          </Routes>
+          <Footer />
+        </div>
       </div>
     </LangContext.Provider>
   );

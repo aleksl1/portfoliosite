@@ -12,15 +12,10 @@ import Logo from "./Logo";
 
 const Navigation = () => {
   const [showNav, setShowNav] = useState(true);
-  // const [showClassName,setShowClassName] =
   const showNavClass = showNav ? "" : "hide";
   const hideNavClass = showNav ? "hide" : "";
-  // let showNavClass = "";
-  // let hideNavClass = "hide";
   const navToggleHandler = () => {
     setShowNav((prevState) => !prevState);
-    // showNavClass = "hide";
-    // hideNavClass = "";
   };
 
   const activeClass = ({ isActive }) => (isActive ? "active" : "inactive");

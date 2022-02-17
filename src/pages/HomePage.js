@@ -1,7 +1,6 @@
 import reactLogo from "../assets/react-logo-icon.png";
 import centerImage from "../assets/center.png";
 import developerImage from "../assets/developer.png";
-import SelectLang from "../components/SelectLang";
 import { useContext } from "react";
 import LangContext from "../store/lang-context";
 
@@ -9,7 +8,6 @@ const HomePage = () => {
   const contextLang = useContext(LangContext);
   return (
     <>
-      <SelectLang />
       <div className="home page-wrap">
         <div className="page-container">
           <div className="home-introduction">
