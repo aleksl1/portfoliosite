@@ -3,9 +3,12 @@ import { NavLink } from "react-router-dom";
 import { FaHome, FaCogs, FaInfoCircle, FaMailBulk } from "react-icons/fa";
 import Logo from "./Logo";
 import SelectLang from "./SelectLang";
+import { useContext } from "react";
+import LangContext from "../store/lang-context";
 
 const Navigation = () => {
   const [showNav, setShowNav] = useState(true);
+  const contextLang = useContext(LangContext);
   const showNavClass = showNav ? "" : "hide";
   const hideNavClass = showNav ? "hide" : "";
   const navToggleHandler = () => {
@@ -42,7 +45,8 @@ const Navigation = () => {
         <ul className={`nav-list ${showNavClass}`}>
           <li>
             <NavLink onClick={navToggleHandler} className={activeClass} to="/">
-              <FaHome className="icon-centered" /> Home
+              <FaHome className="icon-centered" />{" "}
+              {contextLang.inEnglish ? "Home" : "Start"}
             </NavLink>
           </li>
           <li>
@@ -51,7 +55,8 @@ const Navigation = () => {
               className={activeClass}
               to="projects"
             >
-              <FaCogs className="icon-centered" /> Projects
+              <FaCogs className="icon-centered" />{" "}
+              {contextLang.inEnglish ? "Projects" : "Projekty"}
             </NavLink>
           </li>
           <li>
@@ -60,7 +65,8 @@ const Navigation = () => {
               className={activeClass}
               to="about"
             >
-              <FaInfoCircle className="icon-centered" /> About Me
+              <FaInfoCircle className="icon-centered" />{" "}
+              {contextLang.inEnglish ? "About me" : "O mnie"}
             </NavLink>
           </li>
 
@@ -70,7 +76,8 @@ const Navigation = () => {
               className={activeClass}
               to="contact"
             >
-              <FaMailBulk className="icon-centered" /> Contact
+              <FaMailBulk className="icon-centered" />{" "}
+              {contextLang.inEnglish ? "Contact" : "Kontakt"}
             </NavLink>
           </li>
         </ul>

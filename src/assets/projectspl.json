@@ -1,0 +1,35 @@
+{
+  "projectseng": {
+    "0": {
+      "name": "Shop with React",
+      "stack": "JS React HTML CSS Modules Firebase REST Api react-router, redux",
+      "details": "Online store with user authentication throught firebase API, products and user cart data are being saved in firebase database, state management using react redux-toolkit, basic styles with light pico.css framework, more precise styling with css.modules",
+      "live": "https://shopjs-fc7ef.firebaseapp.com/",
+      "github": "https://github.com/aleksl1/cartwithauthentication"
+    },
+    "1": {
+      "name": "xxxxxx",
+      "stack": "xxxxxxxxxxxxxx",
+      "details": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "live": "xxxxxxxxxxxxxxxxx",
+      "github": "xxxxxxxxxxxxx"
+    }
+  },
+
+  "projectspl": {
+    "0": {
+      "name": "Sklep online",
+      "stack": "JS React HTML CSS Modules Firebase REST Api react-router, redux",
+      "details": "Sklep online z rejestracją i logowaniem przy pomocy firebase API,koszykiem zapisywanym w bazie danych firebase, zarzadzanie stanem przy użyciu react redux-toolkit, uzycie localStorage przeglądarki, podstawowe stylowanie lekkim frameworkiem pico.css, bardziej zaawansowane stylowanie w modułach CSS.",
+      "live": "https://shopjs-fc7ef.firebaseapp.com/",
+      "github": "https://github.com/aleksl1/cartwithauthentication"
+    },
+    "1": {
+      "name": "xxxxxx",
+      "stack": "xxxxxxxxxxxxxx",
+      "details": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "live": "xxxxxxxxxxxxxxxxx",
+      "github": "xxxxxxxxxxxxx"
+    }
+  }
+}

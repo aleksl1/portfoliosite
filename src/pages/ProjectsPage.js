@@ -1,11 +1,18 @@
 import ProjectCard from "../components/ProjectCard";
 import { useEffect, useState } from "react";
+import { useContext } from "react";
+import LangContext from "../store/lang-context";
 
 const ProjectsPage = () => {
   const [projectsData, setProjectsData] = useState([]);
-  const getCurrentProjectsData = () => {
+  const contextLang = useContext(LangContext);
+  const projectsFile = contextLang.inEnglish
+    ? "projectseng.json"
+    : "projectspl.json";
+
+  useEffect(() => {
     fetch(
-      "https://aslawekportfolio-default-rtdb.europe-west1.firebasedatabase.app/projects.json"
+      `https://aslawekportfolio-default-rtdb.europe-west1.firebasedatabase.app/${projectsFile}`
     )
       .then((response) => {
         if (!response.ok) {
@@ -17,11 +24,7 @@ const ProjectsPage = () => {
       .then((data) => {
         setProjectsData([...data]);
       });
-  };
-
-  useEffect(() => {
-    getCurrentProjectsData();
-  }, []);
+  }, [projectsFile]);
 
   const allProjects = projectsData.map((project) => (
     <ProjectCard
@@ -37,7 +40,7 @@ const ProjectsPage = () => {
   return (
     <div className="projects page-wrap">
       <div className="projects-header">
-        <h1>My projects: </h1>
+        <h1>{contextLang.inEnglish ? "My projects:" : "Projekty: "}</h1>
       </div>
       {allProjects}
     </div>

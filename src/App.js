@@ -12,7 +12,7 @@ import ContactPage from "./pages/ContactPage";
 import LangContext from "./store/lang-context";
 
 function App() {
-  const [isInEnglish, setIsInEnglish] = useState(true);
+  const [isInEnglish, setIsInEnglish] = useState(false);
   const changeLangHandler = () => {
     setIsInEnglish((prevState) => !prevState);
   };

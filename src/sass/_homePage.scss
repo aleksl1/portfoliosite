@@ -1,24 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
-
+.home {
+  position: relative;
+}
 .page-container {
+  align-self: center;
   display: flex;
   flex-direction: row-reverse;
+  height: 100%;
+  align-items: center;
   @media (max-width: 640px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .home-introduction {
-    flex-basis: 100%;
-    margin: 0 25px;
+    width: 400px;
+    margin: 0 2rem;
     font-family: "Cairo", Arial, sans-serif;
-    font-size: 20px;
+    font-size: 1.2rem;
+    text-align: justify;
+    word-wrap: break-word;
+    @media (max-width: 640px) {
+      width: 300px;
+      margin-top: 4rem;
+    }
+    .intro-container {
+      .intro-title {
+        font-size: 2rem;
+        @media (max-width: 640px) {
+          text-align: center;
+        }
+      }
+      .intro-list {
+        margin-left: 2rem;
+        list-style: square;
+        @media (max-width: 640px) {
+          margin-left: 3rem;
+        }
+        .intro-item {
+          padding: 0.3rem;
+          .intro-link {
+            color: $linkcolor;
+          }
+        }
+      }
+    }
   }
 }
 div.img-container {
   img {
     margin: 0 25px 0 25px;
-    width: 300px;
+    width: 250px;
     border: solid 1px $color3;
-    border-radius: 10px;
+    border-radius: 50%;
     box-shadow: 0 0 2px 2px $color3;
+    background-color: rgba(255, 255, 255, 0.739);
   }
 }

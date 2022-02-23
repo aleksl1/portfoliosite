@@ -6,7 +6,7 @@
 @import "homePage";
 @import "projectsPage";
 @import "aboutMePage";
-@import "cvPage";
+
 @import "contactPage";
 @import "footer";
 @import "selectLang";
@@ -18,15 +18,11 @@
   box-sizing: border-box;
 }
 body {
-  background: url("../assets/bg2.png") no-repeat center center fixed;
+  background: url("../assets/concrete_wall.png") repeat center center fixed;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
 }
-.background-effects {
-  position: absolute;
-  width: 100%;
-  background-color: rgba(34, 34, 34, 0.904);
-}
+
 .wrapper {
   max-width: 1024px;
   min-height: 100vh;

@@ -13,7 +13,7 @@
   }
   .project-stack {
     font-size: 1rem;
-    color: rgb(0, 243, 251);
+    color: $linkcolor;
     font-style: italic;
     text-align: center;
     padding: 0.5rem 0;
@@ -23,6 +23,9 @@
     border-top: 1px solid #f26b1d;
     border-bottom: 1px solid #f26b1d;
     word-wrap: break-word;
+    p {
+      letter-spacing: 1px;
+    }
   }
   .project-links {
     text-align: center;
@@ -34,7 +37,7 @@
       }
       a {
         display: block;
-        color: rgb(0, 243, 251);
+        color: $linkcolor;
         word-wrap: break-word;
       }
     }

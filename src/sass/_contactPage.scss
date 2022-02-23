@@ -1,12 +1,23 @@
 .contact {
-  // background-color: $colordarkgreen;
-  position: relative;
-  min-height: 270px;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 840px) {
+    flex-wrap: wrap;
+  }
   .contact-info {
+    flex-basis: 50%;
+    @media (max-width: 840px) {
+      flex-basis: 100%;
+    }
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    @include absolute-centered;
+    .contact-phone {
+      font-size: 1.4rem;
+    }
+
     span {
       display: block;
       flex-grow: 1;
@@ -15,8 +26,92 @@
       text-align: center;
     }
     a {
-      text-decoration: none;
-      color: white;
+      text-decoration: underline;
+      color: $linkcolor;
     }
   }
+  .contact-form-wrap {
+    flex-basis: 50%;
+    margin: 2rem 0;
+    @media (max-width: 840px) {
+      flex-basis: 100%;
+    }
+    .form-header {
+      width: 60%;
+      margin: 0 auto;
+      text-align: center;
+      padding-bottom: 1rem;
+      border-bottom: dotted 1px $colororange;
+      font-weight: bold;
+      @media (max-width: 1024px) {
+        width: 80%;
+      }
+      @media (max-width: 840px) {
+        width: 50%;
+      }
+      @media (max-width: 640px) {
+        width: 60%;
+      }
+    }
+    .contact-form {
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      width: 60%;
+      // border: dotted 2px $colororange;
+      outline: none;
+      overflow: hidden;
+      @media (max-width: 1024px) {
+        width: 80%;
+      }
+      @media (max-width: 840px) {
+        width: 50%;
+      }
+      @media (max-width: 640px) {
+        width: 60%;
+      }
+
+      input,
+      textarea,
+      button {
+        flex-basis: 100%;
+        padding: 1rem 0.5rem;
+        outline: none;
+        background-color: transparent;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-bottom: dotted 1px $colororange;
+        font-size: 1rem;
+      }
+      input::placeholder {
+        text-align: center;
+      }
+      textarea {
+        font-size: 1.5rem;
+      }
+      button {
+        border-bottom: none;
+        cursor: pointer;
+      }
+      button:hover {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  // border: 1px solid green;
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
 }

@@ -1,10 +1,16 @@
 .about-me {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 
-  div {
+  .aboutMeInfo {
     flex-basis: 100%;
-    text-align: center;
-    margin: 0 auto;
+    margin: 0 2rem;
+
+    p,
+    h4 {
+      padding: 1rem;
+    }
   }
 }
