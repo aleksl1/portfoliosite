@@ -1,4 +1,4 @@
-import myPhoto from "../assets/zdjcv-removebg.png";
+import myPhoto from "../assets/IMG-3804.jpg";
 import { useContext } from "react";
 import LangContext from "../store/lang-context";
 import { Link } from "react-router-dom";
