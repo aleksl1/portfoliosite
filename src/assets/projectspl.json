@@ -2,34 +2,34 @@
   "projectseng": {
     "0": {
       "name": "Shop with React",
-      "stack": "JS React HTML CSS Modules Firebase REST Api react-router, redux",
-      "details": "Online store with user authentication throught firebase API, products and user cart data are being saved in firebase database, state management using react redux-toolkit, basic styles with light pico.css framework, more precise styling with css.modules",
+      "stack": "JS / React with Hooks / HTML / CSS Modules / Firebase REST Api / react-router / redux with reduxjstoolkit / browser localStorage",
+      "details": "Online store with user authentication throught firebase API. Products and user cart data saved in firebase database. State management using react redux-toolkit. Basic styles with light pico.css framework, more precise styling with css.modules. Using browser localStorage",
       "live": "https://shopjs-fc7ef.firebaseapp.com/",
       "github": "https://github.com/aleksl1/cartwithauthentication"
     },
     "1": {
-      "name": "xxxxxx",
-      "stack": "xxxxxxxxxxxxxx",
-      "details": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "live": "xxxxxxxxxxxxxxxxx",
-      "github": "xxxxxxxxxxxxx"
+      "name": "Portfolio",
+      "stack": "JS / React with Hooks / HTML / CSS with SCSS / react-router / firebase",
+      "details": "My personal portfolio, few react components, made available in english or polish by using react context, styled with sass preprocessor ( scss ), contact form with formsubmit.co, projects data loaded from firebase for convenient addition of new projects ",
+      "live": "https://aslawekportfolio.web.app/",
+      "github": "https://github.com/aleksl1/portfoliosite"
     }
   },
 
   "projectspl": {
     "0": {
       "name": "Sklep online",
-      "stack": "JS React HTML CSS Modules Firebase REST Api react-router, redux",
-      "details": "Sklep online z rejestracją i logowaniem przy pomocy firebase API,koszykiem zapisywanym w bazie danych firebase, zarzadzanie stanem przy użyciu react redux-toolkit, uzycie localStorage przeglądarki, podstawowe stylowanie lekkim frameworkiem pico.css, bardziej zaawansowane stylowanie w modułach CSS.",
+      "stack": "JS / React + Hooks / HTML / CSS Modules / Firebase REST Api / react-router / redux + reduxjstoolkit / browser localStorage",
+      "details": "Sklep online z rejestracją i logowaniem przy pomocy firebase API,koszykiem zapisywanym w bazie danych firebase, zarzadzanie stanem przy użyciu react redux-jstoolkit, uzycie localStorage przeglądarki, podstawowe stylowanie lekkim frameworkiem pico.css, bardziej zaawansowane stylowanie w modułach CSS.",
       "live": "https://shopjs-fc7ef.firebaseapp.com/",
       "github": "https://github.com/aleksl1/cartwithauthentication"
     },
     "1": {
-      "name": "xxxxxx",
-      "stack": "xxxxxxxxxxxxxx",
-      "details": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "live": "xxxxxxxxxxxxxxxxx",
-      "github": "xxxxxxxxxxxxx"
+      "name": "Portfolio",
+      "stack": "JS / React + Hooks / HTML / CSS + SCSS / react-router / firebase",
+      "details": "Moje portfolio złożone z kilku komponentów w React, możliwość zmiany języka na angielski zaimplementowana przy użyciu react context, style z użyciem preprocesora Sass(scss), formularz kontaktowy przez formsubmit.co, dane o projektach pobierane z firebase'a dla łatwości edycji i dodawnia nowych projektów.",
+      "live": "https://aslawekportfolio.web.app/",
+      "github": "https://github.com/aleksl1/portfoliosite"
     }
   }
 }
