@@ -17,7 +17,7 @@ const Footer = () => {
             </a>
           </span>
           <span className="footer-info-social">
-            <a href="tel:793675575">
+            <a href="tel:00000000">
               <FaMobileAlt />
             </a>
           </span>
